@@ -11,7 +11,7 @@ const addUser = async (username) => {
       method: "POST",
       headers: {
         apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
-        AUthorization: `Bearer ${process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY}`,
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY}`,
         "Content-Type": "application/json"
       },
       body: JSON.stringify({ id, username })
